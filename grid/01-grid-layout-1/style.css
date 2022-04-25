@@ -4,6 +4,10 @@ body, html {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 330px 1060px;
+  grid-template-rows: 85px 85px 415px 85px;
+  gap: 15px;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -21,18 +25,24 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  grid-column: 1 / -1;
 }
 
 .sidebar {
   background-color: #FF7755;
+  grid-column: 1 / 2;
+  grid-row: 2 / -2;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-column: 2 / -1;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column: 2 / -1;
+  grid-row: 3 / -2;
 }
 
 .article p {
@@ -44,4 +54,5 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / -1;
 }
